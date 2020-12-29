@@ -15,6 +15,18 @@ public class Contact {
 	public Contact() {
 		super();
 	}
+	
+	public Contact(Integer idPersona, String nombre, String apellidoPaterno, String apellidoMaterno, String direccion,
+			long telefono) {
+		super();
+		this.idPersona = idPersona;
+		this.nombre = nombre;
+		this.apellidoPaterno = apellidoPaterno;
+		this.apellidoMaterno = apellidoMaterno;
+		this.direccion = direccion;
+		this.telefono = telefono;
+	}
+
 	public Integer getIdPersona() {
 		return idPersona;
 	}

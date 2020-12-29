@@ -21,10 +21,8 @@ public class ContactServiceImpl implements ContactService {
 	@Override
 	public void addContacto(Contact contacto) {
 
-		contacto.setIdPersona(listaContacto.size() + 1);
-		if (contacto.getNombre() != null) {
-			listaContacto.add(contacto);
-		}
+		contacto.setIdPersona(listaContacto.size() + 1); 
+		if (contacto.getNombre() != null)listaContacto.add(contacto);
 	}
 
 	@Override
