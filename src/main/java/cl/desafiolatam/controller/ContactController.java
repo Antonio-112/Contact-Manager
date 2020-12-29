@@ -32,7 +32,6 @@ public class ContactController {
 	public String initContact(@ModelAttribute("Contact") Contact persona, ModelMap model) {
 		servicio.addContacto(persona);
 		model.addAttribute("listaContacto", servicio.getContactList());
-
 		return "/initContactManager";
 	}
 

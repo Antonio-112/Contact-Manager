@@ -22,6 +22,7 @@ public class ContactServiceImpl implements ContactService {
 	public void addContacto(Contact contacto) {
 
 		contacto.setIdPersona(listaContacto.size() + 1);
+
 		if (contacto.getNombre() != null) {
 			listaContacto.add(contacto);
 		}
